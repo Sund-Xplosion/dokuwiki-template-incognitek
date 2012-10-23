@@ -175,6 +175,39 @@ div#pageinfo a {
   color: __text__;
 }
 
+/* kopfzeile */
+
+div#kopfzeile {
+  background: url(images/content_background_bottom.png) repeat-y scroll bottom;
+  color: black;
+  padding: 0px 27px 3px 27px;
+  overflow:visible;
+  height: auto;
+
+  /* fix ie7 invisibility bug */
+  border: 1px solid transparent;
+}
+
+div#kopfzeile div#kopfzeile_left {
+  float: left;
+  width:27.5%;
+}
+
+div#kopfzeile div#kopfzeile_center {
+  float: left;
+  text-align: center;
+  width: 45%;
+}
+
+div#kopfzeile div#kopfzeile_right {
+  text-align: right;
+}
+
+div#kopfzeile input.edit {
+  margin-right: 5px;
+  width: 100px;
+
+
 /* footer */
 
 div#footer {

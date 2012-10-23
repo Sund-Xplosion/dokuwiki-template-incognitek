@@ -45,6 +45,20 @@ if (!defined('DOKU_INC')) die();
       <?php }?>
       <?php flush()?>    
 
+      <div id="kopfzeile">
+        <div id="kopfzeile_left">
+          <?php tpl_button('edit')?>
+        </div>
+        <div id="kopfzeile_center">
+          <?php tpl_button('admin')?>
+          <?php tpl_button('profile')?>
+          <?php tpl_button('login')?>
+        </div>
+        <div id="kopfzeile_right">
+          <?php tpl_searchform(); ?>
+        </div>
+      </div>
+
       <div class="page">
 
         <!-- wikipage start -->
@@ -71,12 +85,12 @@ if (!defined('DOKU_INC')) die();
         </div>
         <div id="footer_center">
           <?php tpl_button('subscription')?>
-          <?php tpl_button('admin')?>
-          <?php tpl_button('profile')?>
-          <?php tpl_button('login')?>
+          <?php #tpl_button('admin')?>
+          <?php #tpl_button('profile')?>
+          <?php #tpl_button('login')?>
         </div>
         <div id="footer_right">
-          <?php tpl_searchform(); ?>        
+	  <?php #tpl_searchform(); ?>
         </div>        
       </div>
 
