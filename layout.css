@@ -1,0 +1,261 @@
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background-image:url(images/background.png);
+  background-position:center top;
+  background-repeat:no-repeat;
+}
+
+/* common elements */
+
+* {
+  margin:0;
+  padding:0;
+}
+
+a img {
+  border: 0px;
+}
+
+a { color: __extern__; text-decoration: none; }
+a:hover	{ text-decoration: underline; }
+a:active { text-decoration: underline; }
+
+ol, ul {
+  line-height: 1.5em;
+  margin: .5em .5em .5em 2.5em;
+  padding: 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+span.nowrap label {
+  margin-left: 5px;
+}
+
+/* forms */
+
+div#content label.block {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+
+div#content label.simple {
+  display: block;
+  text-align: left;
+  font-weight: normal;
+}
+
+div#content label.block input.edit {
+  width: 50%;
+}
+
+input.button, textarea, button {
+  font-size: 13px;
+  border: 1px solid __border__;
+  background-color: __background_other__;
+  padding: 1px 3px;
+  margin: 2px;
+
+  /* fix IEs long buttons */
+  overflow:visible;
+}
+
+input.button:hover, button.toolbutton:hover {
+	border-color: black;
+	background-color: __highlight__;
+}
+
+input.edit {
+  font-weight: normal;
+  background-color: white;
+  border: 1px solid __border__;
+  margin: 2px;
+  padding: 1px 3px;
+}
+
+input.edit:hover {
+  border-color: black;
+}
+
+/* site elements */
+
+div.dokuwiki {
+  text-align:left;
+  width:770px;
+  margin:0 auto;
+}
+
+div#corpus {     
+}
+
+div.page {
+  padding:15px 30px;
+  background-image: url(images/content_background.png);
+  background-repeat: repeat-y;
+}
+
+div#breadcrumbs {
+	background: url(images/content_background_top.png) no-repeat scroll top;
+	color: black;
+	padding: 12px 15px 3px 15px;
+}
+
+/* top bar */
+
+div#header {
+  position:relative;
+  height:110px;
+  padding: 0 9px 0 9px;
+}
+
+img#logo {
+  position:absolute;
+  right:0;
+  bottom:-27px;
+}
+
+div#navigation ul {
+  position:absolute;
+  bottom: 4px;
+  margin: 0 0 -8px 0;
+  padding: 4px 0;
+  list-style-type: none;
+}
+
+div#navigation li {
+  display: inline;
+  padding: 4px 0px;
+}
+
+div#navigation ul li a {
+  font-weight:bold;
+  text-decoration:none;
+  margin: 0px;
+  padding: 3px 8px;
+  color: black;
+  border: 1px solid transparent;
+}
+
+div#navigation ul li a:hover { 	 
+  color: black;
+  background-color: __highlight__;
+  border-color: black;
+}
+
+/* wiki page */
+
+textarea#wiki__text
+{
+  margin-top: 0;
+  padding-right: 1px;
+  width: 695px;
+  background-color: white;
+}
+
+/* pageinfo */
+
+div#pageinfo {
+  padding: 10px 0px 0px 0px;
+  font-size: 85%;
+}
+
+div#pageinfo div#doc {
+  text-align: right;
+}
+
+div#pageinfo div#user {
+  float: left;
+}
+
+div#pageinfo a {
+  color: __text__;
+}
+
+/* footer */
+
+div#footer {
+  background: url(images/content_background_bottom.png) no-repeat scroll bottom;
+  color: black;
+  padding: 10px 27px 20px 27px;
+  overflow:visible;
+  height: auto;
+  
+  /* fix ie7 invisibility bug */
+  border: 1px solid transparent;
+}
+
+div#footer div#footer_left {
+  float: left;
+  width:27.5%;
+}
+
+div#footer div#footer_center {
+  float: left;
+  text-align: center;
+  width: 45%;
+}
+
+div#footer div#footer_right {  
+  text-align: right;
+}
+
+div#footer input.edit {
+  margin-right: 5px;
+  width: 100px;
+}
+
+div#footer form.button {
+  display: inline;
+}
+
+/* discussion plugin */
+
+div.page div.comment_wrapper {
+  background: none;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+div.page div.comment_wrapper div.comment_body {
+  border: none;
+}
+
+div.page div.comment_wrapper div.comment_text {
+  margin-top: 10px;
+}
+
+div.page div.comment_wrapper div.hentry {
+  background-color: __background_other__;
+  margin-bottom: 20px;
+}
+
+div.page div.comment_buttons
+{  
+  margin-right: 4px;
+  margin-top: -12px;
+  padding-bottom: 3px;
+}
+
+div.page div.comment_text textarea.edit {
+  width: 98.4%;
+}
+
+div.page div.comment_buttons input.button
+{  
+  font-size: 95%;
+}
+
+div.page div.comment_buttons input.button:hover {
+	border-color: black;
+	background-color: __highlight__;
+}
+
+/* toc */
+
+div.toc {
+  display: __display_toc__;
+}
