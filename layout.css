@@ -217,7 +217,7 @@ div#kopfzeile form.button {
 div#footer {
   background: url(images/content_background_bottom.png) no-repeat scroll bottom;
   color: black;
-  padding: 10px 27px 20px 27px;
+  padding: 3px 27px 40px 27px;
   overflow:visible;
   height: auto;
   
