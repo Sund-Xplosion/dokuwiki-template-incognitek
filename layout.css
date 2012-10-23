@@ -85,7 +85,7 @@ input.edit:hover {
 
 div.dokuwiki {
   text-align:left;
-  width:770px;
+  width:970px;
   margin:0 auto;
 }
 
@@ -152,7 +152,7 @@ textarea#wiki__text
 {
   margin-top: 0;
   padding-right: 1px;
-  width: 695px;
+  width: 895px;
   background-color: white;
 }
 
