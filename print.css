@@ -233,5 +233,7 @@ table.inline td {
   text-align: right;
 }
 
-#dw__toc, .footerinc, .header, .bar, .user { display: none;
+#dw__toc, .footerinc, .header, .bar, .user {
+  display: none;
+}
 
